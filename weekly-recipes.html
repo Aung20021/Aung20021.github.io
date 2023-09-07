@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In A Box|Weekly Recipes Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/b66ac86969.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="nav.css">
+    <!--Display-->
+    <style>
+        .A {
+
+            background-image: url("/images/login.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            font-family: sans-serif;
+            height: 250px;
+
+            /*    animation: 3s linear 0s infinite running myColorChange;
+            color: #fefefe;*/
+        }
+
+        .k {
+            color: #fefefe;
+            /* Set the initial text color */
+            animation: myColorChange 3s linear 0s infinite;
+        }
+
+        .B {
+
+            background-image: url("/images/footer0.avif");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            font-family: sans-serif;
+        }
+
+        .C {
+
+            background-image: url("/images/nav0.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            font-family: sans-serif;
+        }
+
+        .col1 {
+            padding: 1rem;
+            background-color: #33b5e5;
+            border: 2px solid #fff;
+            color: #fff;
+        }
+
+        .child {
+            background-color: #2041d3;
+        }
+
+        .c-item {
+            height: 480px;
+        }
+
+        .c-img {
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0.6);
+        }
+
+        .D {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #fefefe;
+            font-family: sans-serif;
+        }
+
+        .container {
+            width: 90%;
+            margin: 50px auto;
+        }
+
+        .heading {
+            text-align: center;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-flow: wrap;
+        }
+
+        .card {
+            width: 30%;
+            background: #fff;
+            border: 1px solid black;
+            margin-bottom: 50px;
+            transition: 0.3s;
+        }
+
+
+        img {
+            width: 100%;
+            border-radius: 3px;
+            transition: .5s;
+
+        }
+
+        .card-body {
+            text-align: center;
+        }
+
+        .card-body .btn {
+            display: block;
+            color: #000000;
+            border: 1px solid black;
+            text-align: center;
+            background: linear-gradient(to right, #e3f57d, #7efff4);
+            margin-top: 30px;
+            text-decoration: none;
+            padding: 10px 5px;
+            display: inline;
+            margin-right: 10px;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+        }
+
+        @media screen and (max-width: 1000px) {
+            .card {
+                width: 40%;
+            }
+        }
+
+        @media screen and (max-width: 620px) {
+            .container {
+                width: 100%;
+            }
+
+            .card {
+                width: 80%;
+            }
+        }
+
+        @keyframes myColorChange {
+            0% {
+                color: red;
+            }
+
+            20% {
+                color: orange;
+            }
+
+            40% {
+                color: yellow;
+            }
+
+            60% {
+                color: green;
+            }
+
+            80% {
+                color: blue;
+            }
+
+            100% {
+                color: purple;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header> <!--main  navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-lg p-3 mb-5 bg-body-tertiary">
+            <div class="container-fluid C">
+                <a href="index.html" class="k" target=_self title="This will take you to home page"
+                    style="text-decoration: none;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                        class="bi bi-house-heart" viewBox="0 0 16 16">
+                        <path d="M8 6.982C9.664 5.309 13.825 8.236 8 12 2.175 8.236 6.336 5.309 8 6.982Z" />
+                        <path
+                            d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.707L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.646a.5.5 0 0 0 .708-.707L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z" />
+                    </svg>
+                    In a Box
+                </a>
+                <a class="navbar-brand ms-2 btn-outline-warning rounded" href="index.html" target=_self
+                    title="This will take you to home page"></a>
+                <button class="navbar-toggler btn-outline-warning rounded" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav my-auto me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active btn-outline-warning rounded color-light" aria-current="page"
+                                href="index.html" target=_self title="This will take you to home page">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-warning rounded my-auto ms-2 me-2" href="menu.html "
+                                title="This will take you to menu page">Menu
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-warning rounded my-auto ms-2 me-2"
+                                href="bake-at-home-set.html " title="This will take you to bake at home set page"
+                                style="font-size: medium;">Bake
+                                at home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-warning rounded ms-2 me-2" href="contact.html "
+                                title="This will take you to contact us page">Contact Us
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown me-2">
+                            <a class="nav-link dropdown-toggle btn-outline-warning rounded" href="Package.html"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Packages Offered
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="Package.html"
+                                        title="This will take you to beginner package page">Beginners Package</a></li>
+                                <li><a class="dropdown-item" href="Package.html"
+                                        title="This will take you to everyday package page">Everyday Package</a></li>
+                                <li><a class="dropdown-item" href="Package.html"
+                                        title="This will take you to beginner deluxe page">Deluxe Package</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="Package.html"
+                                        title="This will take you yo Contact us page">Custom</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown mx-2">
+                            <a class="nav-link dropdown-toggle btn-outline-warning rounded" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Other Items
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="meal-planner.html"
+                                        title="This will take you to Meal Planner page">Meal Planner</a></li>
+                                <li class="nav-item">
+                                    <a class="dropdown-item" href="ingredients.html "
+                                        title="This will take you to Ingredients page">Ingredients
+                                    </a>
+                                </li>
+                                <li><a class="dropdown-item" href="nutritional-information.html"
+                                        title="This will take you to Nutritional Information page">Nutritional
+                                        Information</a></li>
+                                <li><a class="dropdown-item" href="weekly-recipes.html"
+                                        title="This will take you to beginner Weekly Recipes page">Weekly Recipes</a>
+                                </li>
+                                <li><a class="dropdown-item" href="gift-boxes.html"
+                                        title="This will take you yo Gift Boxes page">Gift Boxes</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button-k class="btn btn-outline-primary" type="submit">Search</button-k>
+                    </form><br>
+                    <ul class="nav justify-content-end mx-2">
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded " href="log-in.html" target=_self
+                                title="This will take you to log-in page" style="color: aliceblue;">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded ms-2" href="signup.html"
+                                title="This will take you to Sign Up page" style="color: aliceblue;">Sign Up</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <br></br>
+        <br><br>
+        <div class="container A my-auto">
+            <br><br>
+            <h1 class="display-4 text-center text-white my-auto" id="animatedText">Find Anything You Like</h1>
+            <h5 class="text-center center text-white my-auto" id="animatedText ">At the best price
+            </h5>
+        </div>
+
+        <div class="container my-5 justify-content-center">
+            <div class="row">
+                <div class="card me-2">
+                    <div class="card-header">
+                        Cornbread-Crusted Mahi-Mahi and Honey-BBQ Aioli
+                    </div>
+                    <div class="card-body">
+                        <img src="images/no.1.avif" alt="Meal Image">
+                        <div class="card-title">Cornbread-Crusted Mahi-Mahi and Honey-BBQ Aioli
+                            with corn and sweet potato wedges</div>
+                        <div class="card-footer">
+                            <p>Prep & Cook Time: 35-45 min.</p>
+                        </div>
+
+                        <p><a href="Log-in.html" class="btn">Add To Cart</a>
+                            <a href="Viewdetails.html" class="btn">View Details</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="card me-2">
+                    <div class="card-header">
+                        Balsamic Spicy Onion Jam Burger
+                    </div>
+                    <div class="card-body">
+                        <img src="images/ni1.avif" alt="Meal Image">
+                        <p>
+                            Balsamic Spicy Onion Jam Burger with garlic aioli and potatoes
+                        </p>
+                        <div class="card-footer">
+                            <p>Prep & Cook Time: 35-45 min.</p>
+                            <p>
+                                Spice Level: Mild
+                            </p>
+                        </div>
+                        <p><a href="Log-in.html" class="btn">Add To Cart</a>
+                            <a href="Viewdetails.html" class="btn">View Details</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="card me-2">
+                    <div class="card-header">
+                        Rosemary Chicken and Gnocchi Alfredo
+                    </div>
+                    <div class="card-body">
+                        <img src="images/ni2.avif" alt="Meal Image">
+                        <p>
+                            Rosemary Chicken and Gnocchi Alfredo with broccoli and toasted panko
+                        </p>
+                        <div class="card-footer">
+                            <p>
+                                Prep & Cook Time: 25-35 min.</p>
+                        </div>
+                        <p><a href="Log-in.html" class="btn">Add To Cart</a>
+                            <a href="Viewdetails.html" class="btn">View Details</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="card me-2">
+                    <div class="card-header">
+                        Tomato Braised Tofu
+                    </div>
+                    <div class="card-body">
+                        <img src="images/ni3.avif" alt="Meal Image">
+                        <p>
+                            Tomato Braised Tofu
+                            with rice and beans
+
+                        </p>
+                        <div class="card-footer">
+                            <p>
+                                Prep & Cook Time: 30-40 min.</p>
+                            <p>Spice Level: Mild</p>
+                        </div>
+                        <p><a href="Log-in.html" class="btn">Add To Cart</a>
+                            <a href="Viewdetails.html" class="btn">View Details</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="card me-2">
+                    <div class="card-header">
+                        Spaghetti Bolognese
+                    </div>
+                    <div class="card-body">
+                        <img src="images/display5.jpeg" alt="Meal Image">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi neque molestiae
+                            eius explicabo mollitia tempore reiciendis, vel, sequi.
+                        </p>
+                        <p><a href="Log-in.html" class="btn">Add To Cart</a>
+                            <a href="Viewdetails.html" class="btn">View Details</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="card me-2">
+                    <div class="card-header">
+                        Chicken Tikka Masala
+                    </div>
+                    <div class="card-body">
+                        <img src="images/display15.jpg" alt="Meal Image">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi neque molestiae
+                            eius explicabo mollitia tempore reiciendis, vel, sequi.
+                        </p>
+                        <p><a href="Log-in.html" class="btn">Add To Cart</a>
+                            <a href="Viewdetails.html" class="btn">View Details</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="card me-2">
+                    <div class="card-header">
+                        Chicken Quesadilla
+
+                    </div>
+                    <div class="card-body">
+                        <img src="images/16.avif" alt="Meal Image">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi neque molestiae
+                            eius explicabo mollitia tempore reiciendis, vel, sequi.
+                        </p>
+                        <p><a href="Log-in.html" class="btn">Add To Cart</a>
+                            <a href="Viewdetails.html" class="btn">View Details</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="card me-2">
+                    <div class="card-header">
+                        Mushroom Risotto
+                    </div>
+                    <div class="card-body">
+                        <img src="images/8.avif" alt="Meal Image">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi neque molestiae
+                            eius explicabo mollitia tempore reiciendis, vel, sequi.
+                        </p>
+                        <p><a href="Log-in.html" class="btn">Add To Cart</a>
+                            <a href="Viewdetails.html" class="btn">View Details</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="card me-2">
+                    <div class="card-header">
+                        Honey Glazed Salmon
+                    </div>
+                    <div class="card-body">
+                        <img src="images/7.avif" alt="Meal Image">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi neque molestiae
+                            eius explicabo mollitia tempore reiciendis, vel, sequi.
+                        </p>
+                        <p><a href="Log-in.html" class="btn">Add To Cart</a>
+                            <a href="Viewdetails.html" class="btn">View Details</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="card me-2">
+                    <div class="card-header">
+                        Veggie Spring Rolls
+                    </div>
+                    <div class="card-body">
+                        <img src="images/5.avif" alt="Meal Image">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi neque molestiae
+                            eius explicabo mollitia tempore reiciendis, vel, sequi.
+                        </p>
+                        <p><a href="Log-in.html" class="btn">Add To Cart</a>
+                            <a href="Viewdetails.html" class="btn">View Details</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="card me-2">
+                    <div class="card-header">
+                        Chicken Parmesan
+                    </div>
+                    <div class="card-body">
+                        <img src="images/4.avif" alt="Meal Image">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi neque molestiae
+                            eius explicabo mollitia tempore reiciendis, vel, sequi.
+                        </p>
+                        <p><a href="Log-in.html" class="btn">Add To Cart</a>
+                            <a href="Viewdetails.html" class="btn">View Details</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </main>
+    <footer>
+        <div class="container bg-dark B mb-0">
+
+            <div class="row">
+                <h5 class="text-center text-white">In A Box|All Rights Reserve </h5><br></br>
+                <div class="col-4 text-white text-center">
+                    <h5>services</h5>
+                    <a href="menu.html"
+                        class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Our
+                        Menu</a> <br></br>
+                    <a href="bake-at-home-set.html"
+                        class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Bake
+                        At Home</a><br></br>
+                    <a href="Log-in.html"
+                        class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Log
+                        In</a><br></br>
+                    <a href="signup.html"
+                        class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Sign
+                        Up</a>
+
+
+
+                </div>
+                <div class="col-4 text-white text-center">
+                    <h5>Company</h5>
+                    <a href="about-us.html"
+                        class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">About
+                        Us</a> <br></br>
+                    <a href="contact.html"
+                        class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Contact
+                        Us</a><br></br>
+                    <a href="terms-of-service.html"
+                        class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Terms
+                        Of Service</a><br></br>
+                    <a href="nutritional-information.html"
+                        class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Nutrition
+                        Information</a>
+                </div>
+                <div class="col-4 text-white text-center">
+                    <h5>Share Us</h5>
+
+                    <a href="https://www.facebook.com/" class="k"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+                    <br></br>
+                    <a href="https://www.instagram.com/" class="k"><i class="fa-brands fa-instagram fa-2xl"></i>
+                    </a><br></br>
+                    <a href="https://www.pinterest.com/" class="k"><i
+                            class="fa-brands fa-pinterest fa-2xl"></i></a><br></br>
+                    <a href="https://twitter.com/" class="k"><i
+                            class="fa-brands fa-square-twitter fa-2xl"></i></a><br></br>
+
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

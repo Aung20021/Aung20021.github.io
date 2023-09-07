@@ -1,0 +1,41 @@
+.k{
+    color: #fefefe; /* Set the initial text color */
+  animation: myColorChange 3s linear 0s infinite;
+}
+@keyframes myColorChange {
+    0%{color: red;}
+    20%{color: orange;}
+    40%{color: yellow;}
+    60%{color: green;}
+    80%{color: blue;}
+    100%{color: purple;}
+}
+@keyframes myBorderColorChange {
+    0%{border-color: red;}
+    20%{border-color: orange;}
+    40%{border-color: yellow;}
+    60%{border-color: green;}
+    80%{border-color: blue;}
+    100%{border-color: purple;}
+}
+body{
+    background-color:#FFFFFF;
+}
+
+img {
+    transition: .5s;
+   
+}
+.card:hover img {
+    transform: scale(1.1) rotate(-2deg);
+}
+
+button-k{
+    border-color: #fefefe; /* Set the initial text color */
+    animation: myBorderColorChange 3s linear 0s infinite;
+  }
+  link{
+    color: #fefefe; /* Set the initial text color */
+  animation: myColorChange 3s linear 0s infinite;
+}
+

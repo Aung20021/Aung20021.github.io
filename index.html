@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In A BOx|Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/b66ac86969.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="nav.css">
+    <!--Display-->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        .A {
+            background-image: url("/images/login.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            font-family: sans-serif;
+        }
+
+
+
+        .B {
+            background-image: url("/images/footer0.avif");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            font-family: sans-serif;
+        }
+
+        .C {
+
+            background-image: url("/images/nav0.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            font-family: sans-serif;
+        }
+
+        .col1 {
+            padding: 1rem;
+            background-color: #33b5e5;
+            border: 2px solid #fff;
+            color: #fff;
+        }
+
+        .child {
+            background-color: #2041d3;
+        }
+
+        .c-item {
+            height: 480px;
+        }
+
+        .c-img {
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0.6);
+        }
+
+        .D {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #fefefe;
+            font-family: sans-serif;
+        }
+
+        .container {
+            width: 90%;
+            margin: 50px auto;
+        }
+
+        .heading {
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 50px;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-flow: wrap;
+        }
+
+        .card {
+            width: 20%;
+            background: #fff;
+            border: 1px solid #ccc;
+            margin-bottom: 50px;
+            transition: 0.3s;
+        }
+
+        .card-body {
+            padding: 30px 20px;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .card-body .btn {
+            display: block;
+            color: #fff;
+            text-align: center;
+            background: linear-gradient(to right, #ff416c, #ff4b2b);
+            margin-top: 30px;
+            text-decoration: none;
+            padding: 10px 5px;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+        }
+
+        @media screen and (max-width: 1000px) {
+            .card {
+                width: 40%;
+            }
+        }
+
+        @media screen and (max-width: 620px) {
+            .container {
+                width: 100%;
+            }
+
+            .heading {
+                padding: 20px;
+                font-size: 20px;
+            }
+
+            .card {
+                width: 80%;
+            }
+        }
+
+        .container-a {
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+
+        .card-a {
+            width: 300px;
+            height: 300px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 5px 5px 20px black;
+            position: relative;
+
+        }
+
+        img {
+            transition: .5s;
+
+        }
+
+
+        .card-a-body {
+            width: 100%;
+            height: 100%;
+            top: 0;
+            right: -100%;
+            position: absolute;
+            background: #1f3d4738;
+            backdrop-filter: blur(5px);
+            border-radius: 15px;
+            color: white;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            transition: 2s;
+        }
+
+        .card-a:hover .card-a-body {
+            right: 0;
+        }
+
+        .card-a:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+        }
+
+        .card-a-tite {
+            text-transform: uppercase;
+            font-size: 50px;
+            font-weight: 500;
+        }
+
+        .card-a-sub-title {
+            text-transform: capitalize;
+            font-size: 50px;
+            font-weight: 300;
+        }
+
+        .card-a-text {
+            font-size: 16px;
+            line-height: 25px;
+            margin: 40px 0;
+            font-weight: 400;
+        }
+
+        .card-a-btn {
+            color: #1f3d47;
+            background: #8fabba;
+            width: 120px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-transform: capitalize;
+            border: none;
+            outline: none;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        .card-a:hover img {
+            transform: scale(1.1) rotate(-3deg);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header> <!--main  navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-lg p-3 mb-5 bg-body-tertiary">
+            <div class="container-fluid C">
+                <a href="index.html" target=_self title="This will take you to home page" class="k"
+                    style="text-decoration: none;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                        class="bi bi-house-heart" viewBox="0 0 16 16">
+                        <path d="M8 6.982C9.664 5.309 13.825 8.236 8 12 2.175 8.236 6.336 5.309 8 6.982Z" />
+                        <path
+                            d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.707L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.646a.5.5 0 0 0 .708-.707L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z" />
+                    </svg>
+                    In a Box
+                </a>
+                <a class="navbar-brand ms-2 btn-outline-warning rounded" href="index.html" target=_self
+                    title="This will take you to home page"></a>
+                <button class="navbar-toggler btn-outline-warning rounded" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav my-auto me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active btn-outline-warning rounded color-light" aria-current="page"
+                                href="index.html" target=_self title="This will take you to home page">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-warning rounded my-auto ms-2 me-2" href="menu.html "
+                                title="This will take you to menu page">Menu
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-warning rounded my-auto ms-2 me-2"
+                                href="bake-at-home-set.html " title="This will take you to bake at home set page"
+                                style="font-size: medium;">Bake
+                                at home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-warning rounded ms-2 me-2" href="contact.html "
+                                title="This will take you to contact us page">Contact Us
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown me-2">
+                            <a class="nav-link dropdown-toggle btn-outline-warning rounded" href="Package.html"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Packages Offered
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="Package.html"
+                                        title="This will take you to beginner package page">Beginners Package</a></li>
+                                <li><a class="dropdown-item" href="Package.html"
+                                        title="This will take you to everyday package page">Everyday Package</a></li>
+                                <li><a class="dropdown-item" href="Package.html"
+                                        title="This will take you to beginner deluxe page">Deluxe Package</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="Package.html"
+                                        title="This will take you yo Contact us page">Custom</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown mx-2">
+                            <a class="nav-link dropdown-toggle btn-outline-warning rounded" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Other Items
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="meal-planner.html"
+                                        title="This will take you to Meal Planner page">Meal Planner</a></li>
+                                <li class="nav-item">
+                                    <a class="dropdown-item" href="ingredients.html "
+                                        title="This will take you to Ingredients page">Ingredients
+                                    </a>
+                                </li>
+                                <li><a class="dropdown-item" href="nutritional-information.html"
+                                        title="This will take you to Nutritional Information page">Nutritional
+                                        Information</a></li>
+                                <li><a class="dropdown-item" href="weekly-recipes.html"
+                                        title="This will take you to beginner Weekly Recipes page">Weekly Recipes</a>
+                                </li>
+                                <li><a class="dropdown-item" href="gift-boxes.html"
+                                        title="This will take you yo Gift Boxes page">Gift Boxes</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button-k class="btn btn-outline-primary" type="submit">Search</button-k>
+                    </form><br>
+                    <ul class="nav justify-content-end mx-2">
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded " href="log-in.html" target=_self
+                                title="This will take you to log-in page" style="color: aliceblue;">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded ms-2" href="signup.html"
+                                title="This will take you to Sign Up page" style="color: aliceblue;">Sign Up</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <br></br>
+        <br><br>
+        <div class="container-fluid A mt-4 shadow-lg p-3 mb-5 bg-body-tertiary rounded"
+            style="height: 400px; width: 90%; margin-top: 10%;">
+
+            <div class="container mt-5">
+                <div class="row text-center">
+                    <div class="col-sm-12 col-md-6 hometext">
+                        <h2 class="display-2 text-white">In A BOX</h2>
+                        <p class="text-white"> We Promise You </p>
+                        <p class="text-white">Tasty & Healthy Food </p>
+                        <p> <a href="menu.html" title="This will take you to menu page" class="btn btn-outline-light "
+                                style="width: 40%;">Get Started</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-4">
+                    <i class="fa-solid fa-utensils fa-2xl k"></i>
+                    <br></br>
+                    <p class="h5 ">Meal Kits That Fit Your Needs</p>
+                    <p>From classic meal kits to convenient Oven-Ready and Fast & Fresh options, our meals fit your
+                        needs</p>
+                </div>
+                <div class="col-4">
+                    <i class="fa-regular fa-pen-to-square fa-2xl k"></i>
+                    <br></br>
+                    <p class="h5">Endlessly Customizable</p>
+                    <p>Let your tastebuds be your guide! Use our Customize It tool to make your meals feel truly yours
+                    </p>
+                </div>
+                <div class="col-4">
+                    <i class="fa-solid fa-pizza-slice fa-2xl k"></i>
+                    <br></br>
+                    <p class="h5">Fresh, Pre-Portioned Ingredients</p>
+                    <p>Fresh ingredients in pre-portioned amounts making cooking easier than ever before</p>
+                </div>
+            </div>
+        </div>
+        <div id="hero-carousel" class="carousel slide container" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active c-item">
+                    <img src="/images/display16.jpg" class="d-block w-100 c-img" alt="Slide 1">
+                    <div class="carousel-caption top-0 mt-4">
+                        <p class="mt-5 fs-3 text-uppercase">Discover Delicious Food</p>
+                        <h1 class="display-1 fw-bolder text-capitalize">Delicious & Healthy</h1>
+                        <button class="btn px-4 py-2 fs-5 mt-5">
+                            <p> <a href="menu.html" title="This will take you to menu page"
+                                    class="btn btn-outline-light ">Get Started</a></p>
+                        </button>
+                    </div>
+                </div>
+                <div class="carousel-item c-item">
+                    <img src="/images/display14.jpg" class="d-block w-100 c-img" alt="Slide 2">
+                    <div class="carousel-caption top-0 mt-4">
+                        <p class="text-uppercase fs-3 mt-5">In A Box</p>
+                        <p class="display-1 fw-bolder text-capitalize">Fast & Fresh</p>
+                        <button class="btn px-4 py-2 fs-5 mt-5">
+                            <p> <a href="menu.html" title="This will take you to menu page"
+                                    class="btn btn-outline-light ">Get Started</a></p>
+                        </button>
+                    </div>
+                </div>
+                <div class="carousel-item c-item">
+                    <img src="/images/display13.jpg" class="d-block w-100 c-img" alt="Slide 3">
+                    <div class="carousel-caption top-0 mt-4">
+                        <p class="text-uppercase fs-3 mt-5">In A Box</p>
+                        <p class="display-1 fw-bolder text-capitalize">Cook With Us</p>
+                        <button class="btn px-4 py-2 fs-5 mt-5">
+                            <p> <a href="menu.html" title="This will take you to menu page"
+                                    class="btn btn-outline-light ">Get Started</a></p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="container text-center my-2">
+            <div class="row">
+                <div class="col">
+                    <h5 class="display-5 text-primary">Explore The Menu</h5><br>
+                    <p>Find your new favorite meal with meal kits starting at $7.99 per serving</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container text-center"><!--Tabs-->
+            <ul class="nav nav-pills justify-content-center" id="pills-tab" role="tablist">
+                <li class="nav-item text-center" role="presentation">
+                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                        aria-selected="true">
+                        Greatest Hits
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                        aria-selected="false">
+                        Easy-Prep Meal
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                        aria-selected="false">
+                        Fresh-Start Meal
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-other-tab" data-bs-toggle="pill" data-bs-target="#pills-other"
+                        type="button" role="tab" aria-controls="pills-other" aria-selected="false">
+                        Family-Friendly Meal
+                    </button>
+                </li>
+            </ul>
+        </div>
+        <!--Tab content-->
+        <div class="container justify-content-center" style="justify-content: center;">
+            <div class="tab-content text-center" id="pills-tabContent">
+                <div class="tab-pane fade show active justify-content-center" id="pills-home" role="tabpanel"
+                    aria-labelledby="pills-home-tab">
+                    <div class="container my-5 justify-content-center">
+                        <div class="row justify-content-center">
+                            <div class="card border-dark mb-3 me-2" style="max-width: 14rem;">
+                                <div class="card-header">Greatest Hits</div>
+                                <img src="/images/display6.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Sirloin Steak and Bacon Demi</h5>
+                                    <p class="card-text">with white cheddar potatoes and green beans</p>
+                                </div>
+                            </div>
+                            <div class="card border-dark mb-3 me-2" style="max-width: 14rem;">
+                                <div class="card-header">Greatest Hits</div>
+                                <img src="/images/display7.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Jalapeño-Popper Chicken</h5>
+                                    <p class="card-text">with corn and zucchini</p>
+                                </div>
+                            </div>
+                            <div class="card border-dark mb-3 " style="max-width: 14rem;">
+                                <div class="card-header">Greatest Hits</div>
+                                <img src="/images/display8.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tuscan-Style Shrimp Penne</h5>
+                                    <p class="card-text">with mushrooms and tomatoes</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <div class="container my-5">
+                        <div class="row justify-content-center">
+                            <div class="card border-dark mb-3 me-2" style="max-width: 14rem;">
+                                <div class="card-header">Easy-Prep Meal</div>
+                                <img src="/images/display9.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Roasted Red Pepper and Italian Sausage Penne</h5>
+                                    <p class="card-text">with goat cheese</p>
+                                </div>
+                            </div>
+                            <div class="card border-dark mb-3 me-2" style="max-width: 14rem;">
+                                <div class="card-header">Easy-Prep Meal</div>
+                                <img src="/images/display10.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">BBQ Brisket</h5>
+                                    <p class="card-text">with cheesy mashed potatoes and broccoli</p>
+                                </div>
+                            </div>
+                            <div class="card border-dark mb-3 " style="max-width: 14rem;">
+                                <div class="card-header">Easy-Prep Meal</div>
+                                <img src="/images/display11.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Maple Dijon-Glazed Salmon</h5>
+                                    <p class="card-text">with broccoli and peppers</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                    <div class="container my-5">
+                        <div class="row justify-content-center">
+                            <div class="card border-dark mb-3 me-2" style="max-width: 14rem;">
+                                <div class="card-header">Fresh-Start Meal</div>
+                                <img src="/images/display12.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Creamy Sun-Dried Tomato Chicken</h5>
+                                    <p class="card-text">with Parmesan Green Beans</p>
+                                </div>
+                            </div>
+                            <div class="card border-dark mb-3 me-2" style="max-width: 14rem;">
+                                <div class="card-header">Fresh-Start Meal</div>
+                                <img src="/images/display13.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Katsu Glazed Pork Chop</h5>
+                                    <p class="card-text">with red cabbage and carrot stir-fry</p>
+                                </div>
+                            </div>
+                            <div class="card border-dark mb-3 " style="max-width: 14rem;">
+                                <div class="card-header">Fresh-Start Meal</div>
+                                <img src="/images/display14.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Crispy Pepper Shrimp</h5>
+                                    <p class="card-text">with ponzu sauce</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-other" role="tabpanel" aria-labelledby="pills-other-tab">
+                    <div class="container my-5">
+                        <div class="row justify-content-center">
+                            <div class="card border-dark mb-3 me-2" style="max-width: 14rem;">
+                                <div class="card-header">Family-Friendly Meal</div>
+                                <img src="/images/display15.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Creamy Basil Pesto Chicken Pasta</h5>
+                                    <p class="card-text">with Parmesan</p>
+                                </div>
+                            </div>
+                            <div class="card border-dark mb-3 me-2" style="max-width: 14rem;">
+                                <div class="card-header">Family-Friendly Meal</div>
+                                <img src="/images/display16.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">BBQ Pork Tacos</h5>
+                                    <p class="card-text">with chipotle ranch slaw and crispy onions</p>
+                                </div>
+                            </div>
+                            <div class="card border-dark mb-3 " style="max-width: 14rem;">
+                                <div class="card-header">Family-Friendly Meal</div>
+                                <img src="/images/display17.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lasagna-Style Bolognese Gemelli</h5>
+                                    <p class="card-text">with ricotta
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center"> <!--button for full course-->
+            <a href="menu.html" title="This will take you to menu page"> <button type="button"
+                    class="btn btn-outline-primary">Get Started</button></a>
+        </div>
+        <div class="container "><!--paragraph-->
+            <div class="row ">
+                <div class="col1 text-center">
+                    <p class="text-center my-auto"> <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                            fill="currentColor" class="bi bi-hand-thumbs-up-fill k" viewBox="0 0 16 16">
+                            <path
+                                d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a9.84 9.84 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733.058.119.103.242.138.363.077.27.113.567.113.856 0 .289-.036.586-.113.856-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.163 3.163 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.82 4.82 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z" />
+                        </svg>
+                    <h6>Satisfaction guaranteed:</h6> If you’re not 100% satisfied, we don’t expect you to pay!
+                    <a href="terms-of-service.html" class="k" title="This will take you to terms of service page">See
+                        our terms
+                        for details</a> </p>
+                </div>
+            </div>
+        </div>
+        <h1 class="text-center">How it works</h1>
+        <div class="container-a my-5">
+
+            <div class="col-lg-3 col-md-6">
+                <div class="card-a ms-4 my-4">
+                    <div class="card-a-header"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-1-circle" viewBox="0 0 16 16">
+                            <path
+                                d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM9.283 4.002V12H7.971V5.338h-.065L6.072 6.656V5.385l1.899-1.383h1.312Z" />
+                        </svg> Build Your Box</div>
+                    <img src="images/home1.jpg" class="card-a-imge-top" style=" height: 300px;
+                    width: 300px;
+                    border-radius: 3px;
+                    transition: .5s;" alt="...">
+                    <div class="card-a-body">
+
+
+                        <p class="card-a-text">Every week, choose from over 15 meals. Don’t need a box this week?
+                            Skipping a delivery is easy.</p>
+                        <a href="menu.html" class="card-a-btn btn-secondary" style="text-decoration: none;">See Menu</a>
+                    </div>
+                </div>
+
+                <div class="card-a ms-4 my-4">
+                    <div class="card-a-header "><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-2-circle" viewBox="0 0 16 16">
+                            <path
+                                d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM6.646 6.24v.07H5.375v-.064c0-1.213.879-2.402 2.637-2.402 1.582 0 2.613.949 2.613 2.215 0 1.002-.6 1.667-1.287 2.43l-.096.107-1.974 2.22v.077h3.498V12H5.422v-.832l2.97-3.293c.434-.475.903-1.008.903-1.705 0-.744-.557-1.236-1.313-1.236-.843 0-1.336.615-1.336 1.306Z" />
+                        </svg>Customize Your Order</div>
+                    <img src="images/home2.jpg" style=" height: 300px;
+                    width: 300px;
+                    border-radius: 3px;
+                    transition: .5s;" class="card-a-img-top" alt="...">
+                    <div class="card-a-body">
+
+                        <p class="card-a-text">Let your tastebuds be your guide! Use our Customize It† tool to make
+                            your meals feel truly yours.</p>
+                        <a href="menu.html" class="card-a-btn btn-secondary" style="text-decoration: none;">See Menu</a>
+                    </div>
+                </div>
+
+
+                <div class="card-a ms-4 my-4">
+                    <div class="card-a-header"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-3-circle" viewBox="0 0 16 16">
+                            <path
+                                d="M7.918 8.414h-.879V7.342h.838c.78 0 1.348-.522 1.342-1.237 0-.709-.563-1.195-1.348-1.195-.79 0-1.312.498-1.348 1.055H5.275c.036-1.137.95-2.115 2.625-2.121 1.594-.012 2.608.885 2.637 2.062.023 1.137-.885 1.776-1.482 1.875v.07c.703.07 1.71.64 1.734 1.917.024 1.459-1.277 2.396-2.93 2.396-1.705 0-2.707-.967-2.754-2.144H6.33c.059.597.68 1.06 1.541 1.066.973.006 1.6-.563 1.588-1.354-.006-.779-.621-1.318-1.541-1.318Z" />
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Z" />
+                        </svg>Delivered To Your Doorstep</div>
+                    <img src="images/home3.png" style=" height: 300px;
+                    width: 300px;
+                    border-radius: 3px;
+                    transition: .5s;" class="card-a-img-top" alt="...">
+                    <div class="card-a-body">
+
+                        <p class="card-a-text">Home Chef brings pre-portioned ingredients to your door in an
+                            insulated box so everything stays fresh and delicious.</p>
+                        <a href="menu.html" class="card-a-btn btn-secondary" style="text-decoration: none;">See Menu</a>
+                    </div>
+                </div>
+
+
+                <div class="card-a ms-4 my-4">
+                    <div class="card-a-header "><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            fill="currentColor" class="bi bi-4-circle" viewBox="0 0 16 16">
+                            <path
+                                d="M7.519 5.057c.22-.352.439-.703.657-1.055h1.933v5.332h1.008v1.107H10.11V12H8.85v-1.559H4.978V9.322c.77-1.427 1.656-2.847 2.542-4.265ZM6.225 9.281v.053H8.85V5.063h-.065c-.867 1.33-1.787 2.806-2.56 4.218Z" />
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Z" />
+                        </svg>Cook and Enjoy</div>
+                    <img src="images/home4.jpg" style=" height: 300px;
+                    width: 300px;
+                    border-radius: 3px;
+                    transition: .5s;" class="card-a-img-top" alt="...">
+                    <div class="card-a-body">
+
+                        <p class="card-a-text">Cook delicious meals easily with step-by-step recipes that make home
+                            cooking simpler than ever.</p>
+                        <a href="menu.html" class="card-a-btn btn-secondary" style="text-decoration: none;">See Menu</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <br></br>
+        <div class="container"> <!--button for full course-->
+            <h1 class="text-center text-info">Frequently Asked Questions</h1><br>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            How Does In A Box delivery service works?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">We use your Taste Profile to recommend meals we think you will enjoy
+                            from our full menu of 15+
+                            recipes each week. You can edit or change those meals at any point before our menu closes at
+                            12pm CT each Friday. You can take a look at our menu here.
+                            From there, our team gets moving to source fresh, quality ingredients, and deliver your menu
+                            selections right to your door. Our curated, quality meals are packaged fresh & precisely
+                            portioned for each recipe.
+                            Your meal kit delivery will come with step-by-step recipe cards that help you follow along
+                            and enjoy the experience of cooking nutritious and tasty meals with ease, all week long.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            What types of packages does In A Box company offer?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <p> Beginners:
+                                standard weekly recipes
+                                1 bake at home set
+                                10% off nutritional information app
+                                10% off one special occasion gift box.</p>
+                            <p> Everyday:
+                                35 weekly recipes to choose from
+                                3 bake at home sets
+                                50% off nutritional information app
+                                1 free special occasion gift box.</p>
+                            <p> Deluxe:
+                                50 weekly recipes to choose from
+                                5 bake at home sets
+                                Free nutritional information app
+                                3 special occasion gift boxes.</p>
+                            Custom packages cater for dietary requirements and allergies. Customers must contact the
+                            company to arrange any custom packages.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            When will the meal be delivered?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body"> In A Box sends weekly deliveries Sunday through Friday. You can
+                            select the day of week
+                            that is most convenient for you to receive your meal kit delivery. Delivery day options will
+                            vary according to where you live.
+                            The time of delivery may vary depending on your shipper and your region, we are unable to
+                            request a specific meal prep delivery window on your behalf.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapsefour" aria-expanded="false"
+                            aria-controls="flush-collapsefour">
+                            Does In A Box provide nutrition and calories information of each meal?
+                        </button>
+                    </h2>
+                    <div id="flush-collapsefour" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body"> Yes we provide via the app and you can also find it in our website
+                            nevigation bar.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container bg-dark B mb-0">
+            <div class="row">
+                <h5 class=" text-center text-white ">In A Box|All Rights Reserve </h5><br></br>
+                <div class="col-4 text-white text-center">
+                    <h5>services</h5>
+                    <a href="menu.html"
+                        class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Our
+                        Menu</a> <br></br>
+                    <a href="bake-at-home-set.html"
+                        class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Bake
+                        At Home</a><br></br>
+                    <a href="Log-in.html"
+                        class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Log
+                        In</a><br></br>
+                    <a href="signup.html"
+                        class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Sign
+                        Up</a>
+                </div>
+                <div class="col-4 text-white text-center">
+                    <h5>Company</h5>
+                    <a href="about-us.html"
+                        class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">About
+                        Us</a> <br></br>
+                    <a href="contact.html"
+                        class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Contact
+                        Us</a><br></br>
+                    <a href="terms-of-service.html"
+                        class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Terms
+                        Of Service</a><br></br>
+                    <a href="nutritional-information.html"
+                        class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Nutrition
+                        Information</a>
+                </div>
+                <div class="col-4 text-white text-center">
+                    <h5>Share Us</h5>
+                    <a href="https://www.facebook.com/" class="k"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+                    <br></br>
+                    <a href="https://www.instagram.com/" class="k"><i class="fa-brands fa-instagram fa-2xl"></i>
+                    </a><br></br>
+                    <a href="https://www.pinterest.com/" class="k"><i
+                            class="fa-brands fa-pinterest fa-2xl"></i></a><br></br>
+                    <a href="https://twitter.com/" class="k"><i
+                            class="fa-brands fa-square-twitter fa-2xl"></i></a><br></br>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
